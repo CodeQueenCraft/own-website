@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/CodeQueenCraft/own-website.git/static/css/main.073c9b0a.css",
-    "main.js": "/CodeQueenCraft/own-website.git/static/js/main.059641f0.js",
-    "static/js/787.9007c203.chunk.js": "/CodeQueenCraft/own-website.git/static/js/787.9007c203.chunk.js",
-    "static/media/logo.svg": "/CodeQueenCraft/own-website.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/CodeQueenCraft/own-website.git/index.html",
-    "main.073c9b0a.css.map": "/CodeQueenCraft/own-website.git/static/css/main.073c9b0a.css.map",
-    "main.059641f0.js.map": "/CodeQueenCraft/own-website.git/static/js/main.059641f0.js.map",
-    "787.9007c203.chunk.js.map": "/CodeQueenCraft/own-website.git/static/js/787.9007c203.chunk.js.map"
+    "main.css": "/own-website/static/css/main.073c9b0a.css",
+    "main.js": "/own-website/static/js/main.b3c07a4b.js",
+    "static/js/787.9007c203.chunk.js": "/own-website/static/js/787.9007c203.chunk.js",
+    "static/media/logo.svg": "/own-website/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/own-website/index.html",
+    "main.073c9b0a.css.map": "/own-website/static/css/main.073c9b0a.css.map",
+    "main.b3c07a4b.js.map": "/own-website/static/js/main.b3c07a4b.js.map",
+    "787.9007c203.chunk.js.map": "/own-website/static/js/787.9007c203.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.059641f0.js"
+    "static/js/main.b3c07a4b.js"
   ]
 }
