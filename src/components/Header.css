@@ -1,0 +1,65 @@
+.app-header {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1em;
+}
+
+.header-container-wrap{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+#logo{
+    opacity: 0.8;
+}
+
+#logo:hover{
+    opacity: 1;
+}
+
+#mainnavigation{
+    display: flex;
+    float: right;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.navbar{
+    justify-content: flex-start;
+    flex-direction: row;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar-item{
+    width: fit-content;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.navbar-item-link{
+    text-decoration: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: black;
+}
+
+.navbar-item-link:hover{
+    text-decoration: underline;
+    color: white;
+    opacity: 0.7;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}

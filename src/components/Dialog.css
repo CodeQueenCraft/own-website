@@ -1,0 +1,89 @@
+
+
+.dialog-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Hintergrund mit Transparenz */
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+}
+
+.dialog-border{
+  margin: auto;
+  max-width: 1000px;
+  position: relative;
+
+
+  height: calc(100% - 2rem *2);
+  overflow: none;
+
+
+}
+  
+  .dialog-content {
+    background: white;
+    border-radius: 5px;
+    width: auto; 
+    height: 100%;
+  }
+
+  .dialog-content .content{
+    display: block;
+    overflow-y: auto; /* Scrollleiste anzeigen, wenn der Inhalt größer ist */
+
+    max-height: 100%; /* Maximalhöhe auf 80% der Bildschirmhöhe begrenzen */
+  }
+  
+ .close-button-wrapper{
+  height: 2.5rem;
+ }
+
+.close-button-wrapper .close-button {
+    float: inline-end;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: white;
+    padding: 0.5rem;
+  }
+
+  .close-button:hover {
+    font-weight: bold;
+  }
+
+  .dialog-content .content img{
+    width: auto;
+    height: 10rem;
+  }
+
+/* Breite und Farbe der Scrollbar-Track (Hintergrund) */
+.dialog-content .content::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Breite, Farbe und abgerundete Ecken der Scrollbar-Thumb (der bewegliche Teil) */
+.dialog-content .content::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 6px;
+}
+
+/* Farbe des Scrollbar-Track (der nicht bewegliche Teil) */
+.dialog-content .content::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Gecko-basierte Browser (Firefox) */
+.dialog-content .content {
+  scrollbar-width: thin;
+  scrollbar-color: #333 #f1f1f1;
+}
+
+.dialog-content .content:hover {
+  scrollbar-color: #555 #f1f1f1;
+}

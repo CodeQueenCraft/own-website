@@ -1,0 +1,66 @@
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer .contactbar-wrap{
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .contactbar-wrap p{
+    font-size: 1rem;
+}
+
+
+.contactbar{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.contactbar-item{
+    opacity: 0.6;
+}
+
+.contactbar-item:hover{
+    opacity: 1;
+}
+
+.contactbar-item img{
+    width: 35px;
+    height: 35px;
+}
+
+.copyright-wrap{
+    padding: 1em;
+}
+
+.copyright{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright img{
+    width: 15px;
+    height: 15px;
+}
+
+.copyright p{
+    margin: 0;
+    margin-left: 0.5rem;
+    color: white;
+    font-size: small;
+}

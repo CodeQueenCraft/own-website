@@ -1,0 +1,12 @@
+export { default as SkillAngular } from "./angular.png";
+export { default as SkillCplusplus } from "./c++.png";
+export { default as SkillCss } from "./css.png";
+export { default as SkillHtml } from "./html.png";
+export { default as SkillIntellij } from "./intellij.png";
+export { default as SkillJava } from "./java.png";
+export { default as SkillJs } from "./js.png";
+export { default as SkillPhp } from "./php.png";
+export { default as SkillPostgres } from "./postgresql.png";
+export { default as SkillPython } from "./python.png";
+export { default as SkillReact } from "./react.svg";
+export { default as SkillVscode } from "./vscode.png";

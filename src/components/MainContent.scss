@@ -1,0 +1,15 @@
+
+@mixin MainContent {
+
+  #main {
+    padding: 1rem;
+    padding-top: 3rem;
+  
+    #main-wrap {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200px;
+    }
+  }
+
+}

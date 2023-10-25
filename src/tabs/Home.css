@@ -1,0 +1,441 @@
+
+#home-entryheader{
+    padding-top: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#home-entryheader #first{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#home-entryheader #second{
+    color: rgba(64, 105, 124, 1);
+    margin-bottom: 0;
+    font-size: 2.7rem;
+}
+
+#home-entryheader #third{
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+#home-entryheader #third p{
+    color: rgba(81, 145, 174, 0.8);
+    font-weight: bolder;
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+#home-entryheader #third #point{
+    font-size: 1rem;
+    color: white;
+}
+
+#home-entryheader #typingtxt{
+    font-size: 2rem;
+    /*text-transform: uppercase;*/
+}
+
+#shorts{
+    background-color: rgba(54, 90, 106, 1);
+    padding-top: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+#shorts .numbers{
+    font-weight: bolder;
+    font-size: 2.8rem;
+}
+
+#shorts .numbers p{
+    margin: 0;
+}
+
+#shorts .numbers-txt{
+    line-height: 1.2;
+    flex-direction: column;
+    font-size: 1.1rem;
+    margin-left: 0.5rem;
+}
+
+#shorts .numbers-txt p{
+    margin: 0;
+}
+
+.shortsbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+
+#shorts #box-first{
+    margin-left: 0;
+}
+
+#skillsicons-alternative{
+    display: none;
+}
+
+@media (max-width: 1028px) {
+    #skillsicons{
+        display: none;
+    }
+    #skillsicons-alternative{
+        display: flex;
+    }
+}
+
+@media (max-width: 772px) {
+    #shorts{
+        display: inline-block;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.shortsbox-skill-wrapper{
+    margin-left: 2.3rem;
+}
+
+#shortsbox-skill-wrapper-first{
+    margin: 0;
+}
+
+.shortsbox-skill-wrapper img{
+    width: 2rem;
+    height: 2rem;
+}
+
+#home-content{
+    background-color: rgb(45, 45, 55);
+    padding-top: 3rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 4rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#home-content h2{
+    color: rgb(204, 204, 210);
+}
+
+#home-content p{
+    color: rgb(204, 204, 210);
+}
+
+#home-content .content-row{
+    width: auto;
+    height: auto;
+}
+
+#home-content .block{
+    display: block;
+    width: 30rem;
+}
+
+#aboutme{
+    margin-right: 3rem;
+    float: left;
+    padding: 1rem;
+}
+
+#aboutme:hover{
+    border-radius: 10px;
+    background-color: rgba(54, 90, 106, 0.2);
+}
+
+#myskills{
+    float: right;
+    padding: 1rem;
+}
+
+#myskills:hover{
+    border-radius: 10px;
+    background-color: rgba(54, 90, 106, 0.2);
+}
+
+#myprojects .description{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 0.5rem;
+    color: rgb(204, 204, 210);
+}
+
+@media (max-width: 689px) {
+    .content-block{
+     width: 100%;
+    }
+}
+
+#skills{
+    display: inline-block;
+    width: 100%;
+}
+
+.skill-wrapper{
+    display: inline-block;
+    background-color: rgb(204, 204, 210);
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-wrapper img{
+    width: 3rem;
+    height: 3rem;
+}
+
+#skill-php{
+    height: 2.4rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+#myprojects{
+    width: 100%;
+    margin-right: 3rem;
+    float: left;
+    padding: 1rem;
+}
+
+#myprojects .slider-responsive{
+    position: relative; 
+    display: block;
+}
+
+#myprojects  .slider-item {
+    background-color: rgb(65, 65, 77);
+    height: 15rem;
+    border-radius: 15px;
+    border: 2px solid rgb(65, 65, 77);
+    clip-path: polygon(0 0, 77% 0, 100% 15%,100% 0, 100% 100%, 0% 100%);
+    position: relative;
+}
+
+#myprojects .slider-item .overlay-content{
+    display: none;
+}
+
+#myprojects .slider-item:hover .overlay-content{
+    display: block;
+    position: absolute;
+    align-content: space-between;
+    background: linear-gradient(to bottom,rgb(45, 45, 55), rgb(50, 50, 50, 0.6));
+    border-radius: 15px;
+    padding: 0.5rem;
+    padding-bottom: 0.8rem;
+    height: 100%;
+    clip-path: polygon(0 0, 77% 0, 100% 15%,100% 0, 100% 100%, 0% 100%);
+    position: relative;
+}
+
+#myprojects .slider-item .overlay-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+}
+
+#myprojects .slider-item .overlay-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(0 0, 77% 0, 100% 15%,100% 0, 100% 100%, 0% 100%);
+    border-radius: 15px;
+}
+
+#myprojects .slider-item:hover .overlay-img{
+    display: none;
+}
+
+
+#myprojects .slider-item img{
+    width: 100%;
+    height: 140px;
+    border-radius: 5px;
+}
+
+#myprojects .slider-item h3{
+    margin-top: 1.5rem;
+    color:rgb(204, 204, 210);
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+
+#myprojects .slider-item p{
+    font-size: 0.8rem;
+    color:rgb(204, 204, 210);
+    height: 1.5rem;
+}
+
+#myprojects .slider-item button{
+    position: absolute;
+    width: auto;
+    bottom: 0;
+    background-color: transparent;
+    padding: 0.3rem;
+    padding-left: 0;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.button-project:hover{
+    background-color: white;
+    color: rgba(54, 90, 106, 1);
+}
+
+.multi-slide-carousel {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slide {
+    flex: 0 0 33.33%; /* Ändere dies entsprechend der Anzahl der Slides, die du gleichzeitig anzeigen möchtest */
+    padding: 0 10px; /* Optional: Füge Abstand zwischen den Slides hinzu */
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+
+  #projectblock{
+    background-color: rgba(23, 24, 26, 1);
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  #projectblock #projectheader{
+    display: flex;
+    justify-content: center;
+  }
+
+  #projectblock #projectheader #projectnav{
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+  }
+
+  #projectblock #projectheader #projectnav p{
+    color: white;
+  }
+
+  #projectblock #projectheader #projectnav p:hover{
+    color: rgb(210, 45, 147);
+    text-decoration: underline;
+  }
+
+  #projectblock #list{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+
+  #projectblock #list .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  #projectblock #list .row .project-wrapper-left{
+    width: auto;
+  }
+
+  #projectblock #list .row .project-wrapper-right{
+    padding-left: 3rem;
+    width: auto;
+  }
+
+  #projectblock #list .row .project{
+    width: 15rem;
+    height: 15rem;
+    display: flex;
+    position: relative;
+  }
+
+  #projectblock #list .row .project .label{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 4.5rem; 
+    left: 0%; 
+    color: white;
+    line-height: 0;
+  }
+
+  #projectblock #list .row .project img{
+    width: 9rem;
+    height: 15rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    border-radius: 0.5rem;
+  }
+
+
+
+  #projectblock #list .row .project .button-wrapper{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 10.5rem; 
+    left: 70%; 
+  }
+
+  #projectblock #list .row .project .button-wrapper .line-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #projectblock #list .row .project .button-wrapper .line-wrapper .line{
+    background-color: white;
+    height: 0.1rem;
+    width: 1rem;
+  }
+
+  #projectblock #list .row .project .button-wrapper button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    height: 2.2rem;
+    width: 5rem;
+    font-size: 0.8rem;
+  }
+
+  #projectblock #list .row .project .button-wrapper button:hover{
+    font-weight: bold;
+    font-size: 1rem;
+    border: 0.2px solid rgb(210, 45, 147);
+  }

@@ -1,0 +1,27 @@
+.slider{
+  cursor: grab;
+}
+
+  /* Allgemeine Stile für Slick-Pfeile */
+.slick-prev,
+.slick-next {
+  line-height: 0;
+  display: none!important;
+  position: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.3px;
+  font-weight: bold;
+}
+
+
+.slick-slider{
+  user-select: none;
+}
+
+.slick-dots li button:before {
+  color: rgb(204, 204, 210) !important;
+}
