@@ -1,8 +1,8 @@
 import "./Footer.scss";
-import lnIcon from "../assets/ln.png";
-import xingIcon from "../assets/xing.png";
-import mailIcon from "../assets/mail.png";
-import copyrightIcon from "../assets/copyright.png";
+import lnIcon from "../assets/Ln.png";
+import xingIcon from "../assets/Xing.png";
+import mailIcon from "../assets/Mail.png";
+import copyrightIcon from "../assets/Copyright.png";
 
 function Footer() {
   return (

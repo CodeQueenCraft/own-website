@@ -1,7 +1,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-image: url('/src/assets/mountain.jpg');
+  background-image: url('/src/assets/Mountain.jpg');
   background-size: cover;
   background-repeat: repeat;
   height: 100vh; /* Damit das Hintergrundbild die gesamte Bildschirmhöhe abdeckt */
