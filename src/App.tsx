@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes } from "react-router-dom";
 import { Route } from "react-router";
 
 import "./App.css";
@@ -10,8 +10,14 @@ import Contact from "./tabs/Contact";
 function App() {
   return (
     <div>
-      <p>Aktueller Pfad: {location.pathname}</p>
-      <Home />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/ueber-mich" element={<AboutMe />} />
+          <Route path="/kontakt" element={<Contact />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
