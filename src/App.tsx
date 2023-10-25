@@ -10,14 +10,7 @@ import Contact from "./tabs/Contact";
 function App() {
   return (
     <div>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="ueber-mich" element={<AboutMe />} />
-          <Route path="kontakt" element={<Contact />} />
-        </Routes>
-      </Router>
+      <Home />
     </div>
   );
 }
