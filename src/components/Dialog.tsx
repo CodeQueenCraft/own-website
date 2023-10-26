@@ -42,9 +42,8 @@ const Dialog = ({
                 Close
               </button>
             </div>
-
             <div className="dialog-content">
-              <CardSlider></CardSlider>
+              <CardSlider />
             </div>
           </div>
         </div>,
