@@ -1,4 +1,4 @@
-import "./Footer.scss";
+import "./Footer.css";
 import lnIcon from "../assets/Ln.png";
 import xingIcon from "../assets/Xing.png";
 import mailIcon from "../assets/Mail.png";

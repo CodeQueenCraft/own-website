@@ -1,5 +1,4 @@
 import "./Box.css";
-import "./Box.scss";
 
 interface Props {
   children: React.ReactNode;

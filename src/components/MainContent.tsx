@@ -1,4 +1,3 @@
-import "./MainContent.scss";
 import "./MainContent.css";
 
 interface Props {
