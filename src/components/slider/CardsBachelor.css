@@ -10,7 +10,6 @@
     width: 100%;
     max-width: auto;
     margin: 0 auto;
-    text-align: left;
     height: 50%;
     display: block;
     }
@@ -29,13 +28,18 @@
     width: 100%;
     opacity: 1;
     cursor: pointer;
+    height: calc(85vh - 5rem);
+    padding: 1rem;
     }
     
     .slider__item-content {
-      height: auto; /* Ändere die Höhe auf "auto" */
-      max-height: 10rem; /* Füge eine maximale Höhe hinzu, um den Inhalt zu begrenzen */
+      height: 100%;
+    }
+
+
+    .slider__item-content{
+      height: 100%; /* Ändere die Höhe auf "auto" */
       overflow-y: auto; 
-      margin: 2rem;
     }
 
 
@@ -56,7 +60,7 @@
 }
 
 /* Gecko-basierte Browser (Firefox) */
-.slider__item-content {
+.slider__item-content{
   scrollbar-width: thin;
   scrollbar-color: var(--gray-200) var(--gray-100);
 }
