@@ -9,7 +9,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <p>testindex</p>
     <App />
   </React.StrictMode>
 );

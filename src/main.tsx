@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <div>
-    <p>hello</p>
     <React.StrictMode>
       <App />
     </React.StrictMode>
