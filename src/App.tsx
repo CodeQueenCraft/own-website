@@ -10,7 +10,6 @@ import Contact from "./tabs/Contact";
 function App() {
   return (
     <div>
-      <p>testApp</p>
       <Router>
         <Routes>
           <Route path="/own-website" element={<Home />} />
