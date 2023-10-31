@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.eabce71b.css",
-    "main.js": "/static/js/main.f2ba4219.js",
+    "main.css": "/static/css/main.b754e380.css",
+    "main.js": "/static/js/main.d14a973f.js",
     "static/js/787.9007c203.chunk.js": "/static/js/787.9007c203.chunk.js",
     "static/media/OwnWebsite.png": "/static/media/OwnWebsite.e574a08e971444c4f444.png",
     "static/media/Teamspace.png": "/static/media/Teamspace.d22ba55c240fb75af5b1.png",
     "static/media/Mountain.jpg": "/static/media/Mountain.2c93de13a2ca701569be.jpg",
     "static/media/intellij.png": "/static/media/intellij.adf44c71f7f0eb1bd6e1.png",
     "static/media/vscode.png": "/static/media/vscode.e66400756ccbdbfc0b31.png",
+    "static/media/opencv.png": "/static/media/opencv.1bc26191489b0ec78cb0.png",
     "static/media/TeamspaceCover.jpg": "/static/media/TeamspaceCover.511c6cbb616068c1f5f9.jpg",
     "static/media/python.png": "/static/media/python.677d039fed2c646d0998.png",
     "static/media/Bachelor.png": "/static/media/Bachelor.7860df390164eba383f7.png",
@@ -26,12 +27,12 @@
     "static/media/logo.svg": "/static/media/logo.e0c5f6fa5465c914a4a18860a5511d84.svg",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.eabce71b.css.map": "/static/css/main.eabce71b.css.map",
-    "main.f2ba4219.js.map": "/static/js/main.f2ba4219.js.map",
+    "main.b754e380.css.map": "/static/css/main.b754e380.css.map",
+    "main.d14a973f.js.map": "/static/js/main.d14a973f.js.map",
     "787.9007c203.chunk.js.map": "/static/js/787.9007c203.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eabce71b.css",
-    "static/js/main.f2ba4219.js"
+    "static/css/main.b754e380.css",
+    "static/js/main.d14a973f.js"
   ]
 }
