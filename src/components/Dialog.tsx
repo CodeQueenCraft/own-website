@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import "./Dialog.css";
-import CardSlider from "./slider/CardSlider";
+
+import { CardSlider, CardsBachelor, CardsOwnWebsite } from "./slider";
 
 interface Project {
+  id: string;
   img: string;
   title: string;
   description: string;
-  challenge: string;
-  solution: string;
-  technologies: string;
-  year: string;
+  numSlides: number;
 }
 
 interface Props {
@@ -33,23 +32,27 @@ const Dialog = ({
   const selectedProject =
     selectedProjectIndex !== null ? projects[selectedProjectIndex] : null;
 
-  const dialogPortal = isOpen
-    ? ReactDOM.createPortal(
-        <div className="dialog-overlay">
-          <div className="dialog-border">
-            <div className="close-button-wrapper">
-              <button className="close-button" onClick={onClose}>
-                Close
-              </button>
+  const dialogPortal =
+    isOpen && selectedProject
+      ? ReactDOM.createPortal(
+          <div className="dialog-overlay">
+            <div className="dialog-border">
+              <div className="close-button-wrapper">
+                <button className="close-button" onClick={onClose}>
+                  Close
+                </button>
+              </div>
+              <div className="dialog-content">
+                <CardSlider
+                  numSlides={selectedProject.numSlides}
+                  componentId={selectedProject.id}
+                />
+              </div>
             </div>
-            <div className="dialog-content">
-              <CardSlider />
-            </div>
-          </div>
-        </div>,
-        document.getElementById("dialog-root")!
-      )
-    : null;
+          </div>,
+          document.getElementById("dialog-root")!
+        )
+      : null;
 
   return <React.Fragment>{dialogPortal}</React.Fragment>;
 };

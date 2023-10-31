@@ -1,11 +1,11 @@
 import React from "react";
-import "./CardsBachelor.css";
+import "./CardsOwnWebsite.css";
 
 interface Props {
   id: string;
 }
 
-function CardsBachelor({ id }: Props) {
+function CardsOwnWebsite({ id }: Props) {
   const contents: Record<string, React.ReactNode> = {
     "card-1": (
       <p>
@@ -13,25 +13,6 @@ function CardsBachelor({ id }: Props) {
         eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
         voluptua.", Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
         diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-        erat, sed diam voluptua.", Lorem ipsum dolor sit amet, consetetur
-        sadipscing elLorem ipsum dolor sit amet, consetetur sadipscing elitr,
-        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-        aliquyam erat, sed diam voluptua.", Lorem ipsum dolor sit amet,
-        consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-        labore et dolore magna aliquyam erat, sed diam voluptua.", Lorem ipsum
-        dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-        tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua.", Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-        erat, sed diam voluptua.", Lorem ipsum dolor sit amet, consetetur
-        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna aliquyam erat, sed diam voluptua.", Loritr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua.", Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-        diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-        erat, sed diam voluptua.", Lorem ipsum dolor sit amet, consetetur
-        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-        dolore magna aliquyam erat, sed diam voluptua.", Lorem
       </p>
     ),
     "card-2": (
@@ -78,4 +59,4 @@ function CardsBachelor({ id }: Props) {
   return <div>{selectedContent}</div>;
 }
 
-export default CardsBachelor;
+export default CardsOwnWebsite;

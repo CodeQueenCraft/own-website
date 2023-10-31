@@ -10,7 +10,6 @@ import {
   TypingText,
   ResponsiveSlider,
   Dialog,
-  CardSlider,
 } from "../components";
 
 import {
@@ -71,76 +70,36 @@ function Home() {
 
   const projects = [
     {
+      id: "OwnWebsite",
       cover: OwnWebsite,
       img: OwnWebsite,
       title: "Eigene Webseite",
       description: "Digitale Visitenkarte...",
-      challenge:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-      solution:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ",
-      technologies: "Test",
-      year: "2023",
+      numSlides: 3,
     },
     {
+      id: "Bachelor",
       cover: Bachelor,
       img: Bachelor,
       title: "Bachelorarbeit",
       description: "Vordergrundsegmentierung mittels Optical Flow...",
-      challenge:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-      solution:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ",
-      technologies: "Test",
-      year: "2023",
+      numSlides: 3,
     },
     {
+      id: "Teamspace",
       cover: TeamspaceCover,
       img: Teamspace,
       title: "Arbeitsprojekt",
       description: "Entwicklung der ERP-Software...",
-      challenge:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-      solution:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ",
-      technologies: "Test",
-      year: "2023",
+      numSlides: 3,
     },
     {
+      id: "DefaultProject",
       cover: DefaultImg,
       img: DefaultImg,
       title: "Leer",
       description: "Leer...",
-      challenge:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-      solution:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ",
-      technologies: "Test",
-      year: "2023",
-    },
-    {
-      cover: DefaultImg,
-      img: DefaultImg,
-      title: "Leer",
-      description: "Leer...",
-      challenge:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-      solution:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ",
-      technologies: "Test",
-      year: "2023",
-    },
-    {
-      cover: DefaultImg,
-      img: DefaultImg,
-      title: "Leer",
-      description: "Leer...",
-      challenge:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
-      solution:
-        "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. ",
-      technologies: "Test",
-      year: "2023",
+      numSlides: 3,
     },
   ];
 
