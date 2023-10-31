@@ -8,6 +8,8 @@ interface Props {
   children?: React.ReactNode;
 }
 
+type ProjectProps = { id: string };
+
 function CardSlider({ componentId, numSlides, children }: Props) {
   const slides = [];
 
@@ -26,7 +28,7 @@ function CardSlider({ componentId, numSlides, children }: Props) {
 
   const sliderItems = [];
 
-  let ProjectComponent;
+  let ProjectComponent: React.ComponentType<ProjectProps> | null = null;
 
   switch (componentId) {
     case "Bachelor":
