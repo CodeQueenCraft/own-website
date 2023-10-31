@@ -11,6 +11,7 @@ import {
   SkillIntellij,
   SkillJava,
   SkillJs,
+  SkillOpenCV,
   SkillPhp,
   SkillPostgres,
   SkillPython,
@@ -19,18 +20,9 @@ import {
 } from "../../assets/skills";
 
 const skills = [
-  { img: SkillJs, alt: "JavaScript" },
-  { img: SkillHtml, alt: "HTML" },
-  { img: SkillReact, alt: "React" },
-  { img: SkillCss, alt: "CSS" },
-  { img: SkillVscode, alt: "Visual Studio Code" },
-  { img: SkillJava, alt: "Java" },
-  { img: SkillIntellij, alt: "IntelliJ" },
-  { img: SkillPostgres, alt: "PostgreSQL" },
   { img: SkillPython, alt: "Python" },
-  { img: SkillAngular, alt: "Angular" },
-  { img: SkillCplusplus, alt: "C++" },
-  { img: SkillPhp, alt: "PHP" },
+  { img: SkillVscode, alt: "Visual Studio Code" },
+  { img: SkillOpenCV, alt: "OpenCV" },
 ];
 
 interface Props {
@@ -50,14 +42,38 @@ function CardsBachelor({ id }: Props) {
             Vordergrundsegmentierung mittels Optical Flow...
           </p>
           <img src={Bachelor} alt="Bachelorarbeit" title="Bachelorarbeit" />
-          <h2>Herausforderung</h2>
-          <p className="challenge">Herausforderung ist</p>
-          <h2>Lösung</h2>
-          <p className="solution">Lösung ist</p>
-          <h2>Technologien</h2>
-          <div className="skills"></div>
-          <h2>Links</h2>
-          <p>Material der Organisation:</p>
+          <div className="row">
+            <div className="box">
+              <h2>Herausforderung</h2>
+              <p className="challenge">Herausforderung ist</p>
+            </div>
+            <div className="box right">
+              <h2>Lösung</h2>
+              <p className="solution">Lösung ist</p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="box">
+              <h2>Technologien</h2>
+              <div className="skills">
+                {skills.map((skill) => (
+                  <div className="skill-wrapper" key={skill.img}>
+                    <img src={skill.img} alt={skill.alt} title={skill.alt} />
+                    <p className="skill-title">{skill.alt}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="box right">
+              <h2>Links</h2>
+              <p className="linkttxt">
+                Datengrundlage - basierend auf dem Panafrikanischen Programm:
+              </p>
+              <a href="http://panafrican.eva.mpg.de/" target="_blank">
+                http://panafrican.eva.mpg.de/
+              </a>
+            </div>
+          </div>
         </div>
       </>
     ),

@@ -10,3 +10,4 @@ export { default as SkillPostgres } from "./postgresql.png";
 export { default as SkillPython } from "./python.png";
 export { default as SkillReact } from "./react.svg";
 export { default as SkillVscode } from "./vscode.png";
+export { default as SkillOpenCV } from "./opencv.png";
