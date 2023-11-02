@@ -34,7 +34,7 @@ import {
   OwnWebsite,
 } from "../assets/projects";
 
-import { DefaultImg } from "../assets";
+import { DefaultImg, Portrait } from "../assets";
 
 function Home() {
   const shortSkill = [
@@ -149,7 +149,7 @@ function Home() {
       <Header />
       <MainContent>
         <Box id="home-entryheader">
-          <div>
+          <div id="headertext">
             <p id="first">Hey there,</p>
             <p id="second">I'm a </p>
             <div id="third">
@@ -158,12 +158,14 @@ function Home() {
               <p>
                 Developer<span id="point">&#9632;</span>
               </p>
+              <TypingText id="typingtxt" element="h1" speed={70}>
+                Turning Ideas into Reality
+              </TypingText>
             </div>
-            <TypingText id="typingtxt" element="h1" speed={70}>
-              Turning Ideas into Reality
-            </TypingText>
           </div>
+          <img src={Portrait} />
         </Box>
+
         <Box id="shorts">
           <div className="shortsbox" id="box-first">
             <div className="numbers">

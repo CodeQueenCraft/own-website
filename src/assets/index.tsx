@@ -5,3 +5,4 @@ export { default as Logo } from "./logo.svg";
 export { default as Mail } from "./Mail.png";
 export { default as Mountain } from "./Mountain.jpg";
 export { default as Xing } from "./Xing.png";
+export { default as Portrait } from "./portrait.jpg";

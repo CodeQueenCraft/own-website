@@ -1,25 +1,33 @@
 
 #home-entryheader{
-    padding-top: 5rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-bottom: 1.5rem;
     margin-bottom: 1rem;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    height: 24rem;
+}
+
+#home-entryheader #headertext{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    z-index: 2;
 }
 
 #home-entryheader #first{
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 #home-entryheader #second{
     color: rgba(64, 105, 124, 1);
     margin-bottom: 0;
-    font-size: 2.7rem;
+    font-size: 2rem;
+    margin-top: 0.5rem;
 }
 
 #home-entryheader #third{
@@ -30,7 +38,7 @@
     color: rgba(81, 145, 174, 0.8);
     font-weight: bolder;
     margin: 0;
-    font-size: 3.5rem;
+    font-size: 2.8rem;
 }
 
 #home-entryheader #third #point{
@@ -39,8 +47,19 @@
 }
 
 #home-entryheader #typingtxt{
-    font-size: 2rem;
+    font-size: 1.5rem;
     /*text-transform: uppercase;*/
+}
+
+#home-entryheader img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    height: 100%;
+    width: auto;
+    z-index: 1;
+    mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 1.0) 21%, rgba(0, 0, 0, 1.0) 70%, transparent 100%);
 }
 
 #shorts{
