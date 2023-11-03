@@ -178,13 +178,23 @@ function Home() {
           </div>
           <div className="shortsbox">
             <div className="numbers">
-              <p>12</p>
+              <p>{">"}12</p>
             </div>
             <div className="numbers-txt">
               <p>Verschiedene</p>
-              <p>Projekte</p>
+              <p>Technologien</p>
             </div>
           </div>
+          <div className="shortsbox">
+            <div className="numbers">
+              <p>100%</p>
+            </div>
+            <div className="numbers-txt">
+              <p>Die Richtige für</p>
+              <p>Ihr Unternehmen</p>
+            </div>
+          </div>
+          {/* 
           <div className="shortsbox" id="skillsicons">
             {shortSkill.map((skill, index) => (
               <div
@@ -196,6 +206,7 @@ function Home() {
               </div>
             ))}
           </div>
+          */}
           <div className="shortsbox" id="skillsicons-alternative">
             <div className="numbers">
               <p>{">"}15</p>

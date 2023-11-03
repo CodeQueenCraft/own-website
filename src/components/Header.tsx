@@ -1,6 +1,6 @@
 import React from "react";
-import "./Header.css";
-import logo from "../assets/logo.svg";
+//import "./Header.css";
+import { Logo } from "../assets";
 
 class Header extends React.Component {
   render() {
@@ -9,7 +9,7 @@ class Header extends React.Component {
         <div className="header-container-wrap">
           <div className="header-container">
             <a href="/">
-              <img id="logo" src={logo} alt="Logo" />
+              <img id="logo" src={Logo} alt="Logo" />
             </a>
             <nav id="mainnavigation">
               <ul className="navbar">
