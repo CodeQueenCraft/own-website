@@ -25,6 +25,8 @@ import {
   SkillPython,
   SkillReact,
   SkillVscode,
+  SkillSass,
+  SkillOpenCV,
 } from "../assets/skills";
 
 import {
@@ -47,20 +49,88 @@ function Home() {
     { img: SkillVscode, alt: "Visual Studio Code" },
   ];
 
-  const skills = [
-    { img: SkillJs, alt: "JavaScript" },
-    { img: SkillHtml, alt: "HTML" },
-    { img: SkillReact, alt: "React" },
-    { img: SkillCss, alt: "CSS" },
-    { img: SkillVscode, alt: "Visual Studio Code" },
-    { img: SkillJava, alt: "Java" },
-    { img: SkillIntellij, alt: "IntelliJ" },
-    { img: SkillPostgres, alt: "PostgreSQL" },
-    { img: SkillPython, alt: "Python" },
-    { img: SkillAngular, alt: "Angular" },
-    { img: SkillCplusplus, alt: "C++" },
-    { img: SkillPhp, alt: "PHP" },
+  interface Skill {
+    img: string;
+    alt: string;
+    level: number;
+  }
+
+  const skillsLanguage: Skill[] = [
+    { img: SkillJava, alt: "Java", level: 75 },
+    { img: SkillCplusplus, alt: "C++", level: 60 },
+    { img: SkillPython, alt: "Python", level: 40 },
+    { img: SkillJs, alt: "JavaScript", level: 30 },
+    { img: SkillHtml, alt: "HTML", level: 90 },
+    { img: SkillPhp, alt: "PHP", level: 15 },
   ];
+
+  const skillsIDE: Skill[] = [
+    { img: SkillVscode, alt: "Visual Studio Code", level: 75 },
+    { img: SkillIntellij, alt: "IntelliJ", level: 80 },
+  ];
+
+  const skillsDB: Skill[] = [
+    { img: SkillPostgres, alt: "PostgreSQL", level: 60 },
+  ];
+
+  const skillsJSFramework: Skill[] = [
+    { img: SkillReact, alt: "React", level: 60 },
+    { img: SkillAngular, alt: "Angular", level: 30 },
+  ];
+
+  const skillsStyle: Skill[] = [
+    { img: SkillCss, alt: "CSS", level: 75 },
+    { img: SkillSass, alt: "SCSS", level: 40 },
+  ];
+
+  const skillsOther: Skill[] = [{ img: SkillOpenCV, alt: "OpenCV", level: 30 }];
+
+  const skillsSections = {
+    Sprachen: skillsLanguage,
+    IDEs: skillsIDE,
+    Datenbank: skillsDB,
+    Frameworks: skillsJSFramework,
+    Stylesheets: skillsStyle,
+    Andere: skillsOther,
+  };
+
+  const renderSkillCategorySection = (category: string, skills: Skill[]) => {
+    const getMaxWidth = () => {
+      // Hier kannst du die maximale Breite für den Farbverlauf festlegen
+      return 100; // Beispiel: 100%
+    };
+
+    return (
+      <div key={category} className="skill-category">
+        <p className="category-title">{category}:</p>
+        {skills.map((skill) => {
+          const widthPercentage = skill.level * 2;
+
+          const r = Math.min(64 + widthPercentage, 255); //Farbwerte von var(--mint-100)
+          const g = Math.min(105 + widthPercentage, 255);
+          const b = Math.min(124 + widthPercentage, 255);
+
+          const gradientStyle = {
+            backgroundImage: `linear-gradient(to right, var(--mint-100), rgba(${r}, ${g}, ${b}, 0.7))`,
+          };
+
+          return (
+            <div className="skill-row" key={skill.img}>
+              <div className="mainline">
+                <div
+                  className="skill-line"
+                  style={{ width: `${skill.level}%`, ...gradientStyle }}
+                >
+                  <p>{skill.alt}</p>
+                </div>
+                <img src={skill.img} alt={skill.alt} title={skill.alt} />
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
 
   interface Project {
     img: string;
@@ -233,19 +303,28 @@ function Home() {
             </div>
           </div>
           <div className="content-row">
+            <div className="block" id="mycurrentskills">
+              <h2>Meine Skills</h2>
+            </div>
+          </div>
+          <div className="content-row">
             <div className="block" id="myskills">
               <h2>Meine Skills</h2>
               <p className="description">Kürzlich verwendete Technologien</p>
-              <div id="skills">
-                {skills.map((skill) => (
-                  <div className="skill-wrapper" key={skill.img}>
+              <div id="mycurrentskills-skills">
+                {skillsLanguage.map((skill) => (
+                  <div className="mycurrentskills-wrapper" key={skill.img}>
                     <img src={skill.img} alt={skill.alt} title={skill.alt} />
                   </div>
                 ))}
               </div>
+              <div id="skills">
+                {Object.entries(skillsSections).map(([category, skillList]) =>
+                  renderSkillCategorySection(category, skillList)
+                )}
+              </div>
             </div>
           </div>
-
           <div className="content-row">
             <div id="myprojects">
               <h2>Meine Projekte</h2>
