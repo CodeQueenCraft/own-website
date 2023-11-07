@@ -1,11 +1,10 @@
 
 @mixin MainContent {
 
-  #main {
-    padding: 1rem;
-    padding-top: 2rem;
-  
-    #main-wrap {
+  .main {
+
+    .main-wrap {
+      margin-top: 2rem;
       margin-left: auto;
       margin-right: auto;
       max-width: 1200px;

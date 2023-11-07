@@ -6,8 +6,8 @@ interface Props {
 
 function MainContent({ children }: Props) {
   return (
-    <main id="main">
-      <div id="main-wrap">{children}</div>
+    <main className="main">
+      <div className="main-wrap">{children}</div>
     </main>
   );
 }

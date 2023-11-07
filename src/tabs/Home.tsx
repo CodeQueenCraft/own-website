@@ -39,14 +39,13 @@ import {
 import { DefaultImg, Portrait } from "../assets";
 
 function Home() {
-  const shortSkill = [
-    { img: SkillJava, alt: "Java" },
-    { img: SkillJs, alt: "JavaScript" },
+  const currentSkills = [
+    { img: SkillReact, alt: "React" },
     { img: SkillHtml, alt: "HTML" },
     { img: SkillCss, alt: "CSS" },
-    { img: SkillReact, alt: "React" },
-    { img: SkillIntellij, alt: "IntelliJ" },
     { img: SkillVscode, alt: "Visual Studio Code" },
+    { img: SkillJava, alt: "Java" },
+    { img: SkillIntellij, alt: "IntelliJ" },
   ];
 
   interface Skill {
@@ -111,7 +110,7 @@ function Home() {
           const b = Math.min(124 + widthPercentage, 255);
 
           const gradientStyle = {
-            backgroundImage: `linear-gradient(to right, var(--mint-100), rgba(${r}, ${g}, ${b}, 0.7))`,
+            backgroundImage: `linear-gradient(to right, var(--mint-100), rgba(${r}, ${g}, ${b}, 0.8))`,
           };
 
           return (
@@ -165,6 +164,22 @@ function Home() {
     },
     {
       id: "DefaultProject",
+      cover: DefaultImg,
+      img: DefaultImg,
+      title: "Leer",
+      description: "Leer...",
+      numSlides: 3,
+    },
+    {
+      id: "DefaultProject2",
+      cover: DefaultImg,
+      img: DefaultImg,
+      title: "Leer",
+      description: "Leer...",
+      numSlides: 3,
+    },
+    {
+      id: "DefaultProject3",
       cover: DefaultImg,
       img: DefaultImg,
       title: "Leer",
@@ -303,28 +318,26 @@ function Home() {
             </div>
           </div>
           <div className="content-row">
-            <div className="block" id="mycurrentskills">
-              <h2>Meine Skills</h2>
-            </div>
-          </div>
-          <div className="content-row">
             <div className="block" id="myskills">
               <h2>Meine Skills</h2>
-              <p className="description">Kürzlich verwendete Technologien</p>
-              <div id="mycurrentskills-skills">
-                {skillsLanguage.map((skill) => (
-                  <div className="mycurrentskills-wrapper" key={skill.img}>
-                    <img src={skill.img} alt={skill.alt} title={skill.alt} />
-                  </div>
-                ))}
-              </div>
               <div id="skills">
                 {Object.entries(skillsSections).map(([category, skillList]) =>
                   renderSkillCategorySection(category, skillList)
                 )}
               </div>
+              <p className="description">Kürzlich verwendete Technologien</p>
+              <div id="mycurrentskills-skills">
+                {currentSkills.map((skill) => (
+                  <div className="mycurrentskills-wrapper" key={skill.img}>
+                    <img src={skill.img} alt={skill.alt} title={skill.alt} />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
+        </Box>
+
+        <Box id="home-content-projects">
           <div className="content-row">
             <div id="myprojects">
               <h2>Meine Projekte</h2>
@@ -353,44 +366,6 @@ function Home() {
               </ResponsiveSlider>
             </div>
           </div>
-          {/*  
-          <div className="content-row" id="projectblock">
-            <div id="projectheader">
-              <div id="projectnav">
-                <p id="all">Alle</p>
-                <p id="work">Arbeit</p>
-                <p id="study">Studium</p>
-                <p id="diploma">Abschluss</p>
-              </div>
-            </div>
-            <div id="list">
-              {Array.from(
-                { length: Math.ceil(projects.length / 2) },
-                (_, rowIndex) => (
-                  <div className="row" key={rowIndex}>
-                    {[1, 2].map((side) => {
-                      const projectIndex = rowIndex * 2 + side - 1;
-                      return projectIndex < projects.length ? (
-                        <div
-                          key={side}
-                          className={`project-wrapper-${
-                            side === 1 ? "left" : "right"
-                          }`}
-                        >
-                          {renderProject(projects[projectIndex])}
-                        </div>
-                      ) : (
-                        <div className="project-wrapper-right">
-                          <div className="project"></div>
-                        </div>
-                      );
-                    })}
-                  </div>
-                )
-              )}
-            </div>
-          </div>
-*/}
         </Box>
       </MainContent>
       <Footer />
