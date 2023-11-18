@@ -12,6 +12,8 @@ import {
   Dialog,
 } from "../components";
 
+import { Shorts1, Shorts2, Shorts3, Shorts4 } from "../assets/shorts";
+
 import {
   SkillAngular,
   SkillCplusplus,
@@ -253,52 +255,51 @@ function Home() {
 
         <Box id="shorts">
           <div className="shortsbox" id="box-first">
-            <div className="numbers">
-              <p>{">"}1,5</p>
-            </div>
-            <div className="numbers-txt">
-              <p>Jahre</p>
-              <p>Erfahrung</p>
-            </div>
-          </div>
-          <div className="shortsbox">
-            <div className="numbers">
-              <p>{">"}12</p>
-            </div>
-            <div className="numbers-txt">
-              <p>Verschiedene</p>
-              <p>Technologien</p>
-            </div>
-          </div>
-          <div className="shortsbox">
-            <div className="numbers">
-              <p>100%</p>
-            </div>
-            <div className="numbers-txt">
-              <p>Die Richtige für</p>
-              <p>Ihr Unternehmen</p>
-            </div>
-          </div>
-          {/* 
-          <div className="shortsbox" id="skillsicons">
-            {shortSkill.map((skill, index) => (
-              <div
-                className="shortsbox-skill-wrapper"
-                id={index === 0 ? "shortsbox-skill-wrapper-first" : undefined}
-                key={skill.img}
-              >
-                <img src={skill.img} alt={skill.alt} title={skill.alt} />
+            <img src={Shorts1} alt="Erfahrung" title="Erfahrung" />
+            <div className="shortsbox-description">
+              <div className="numbers">
+                <p>{">"}1,5 J.</p>
               </div>
-            ))}
-          </div>
-          */}
-          <div className="shortsbox" id="skillsicons-alternative">
-            <div className="numbers">
-              <p>{">"}15</p>
+              <div className="numbers-txt">
+                <p>Erfahrung</p>
+                <p></p>
+              </div>
             </div>
-            <div className="numbers-txt">
-              <p>Frameworks &</p>
-              <p>Technologien</p>
+          </div>
+          <div className="shortsbox">
+            <img src={Shorts2} alt="Technologien" title="Technologien" />
+            <div className="shortsbox-description">
+              <div className="numbers">
+                <p>{">"}12</p>
+              </div>
+              <div className="numbers-txt">
+                <p>Verschiedene</p>
+                <p>Technologien</p>
+              </div>
+            </div>
+          </div>
+          <div className="shortsbox">
+            <img src={Shorts3} alt="Die Richtige" title="Die Richtige" />
+            <div className="shortsbox-description">
+              <div className="numbers">
+                <p id="infinite">ꝏ</p>
+              </div>
+              <div className="numbers-txt">
+                <p>Geniale</p>
+                <p>Ideen</p>
+              </div>
+            </div>
+          </div>
+          <div className="shortsbox">
+            <img src={Shorts4} alt="Die Richtige" title="Die Richtige" />
+            <div className="shortsbox-description">
+              <div className="numbers">
+                <p>100%</p>
+              </div>
+              <div className="numbers-txt">
+                <p>Die Richtige für</p>
+                <p>Ihr Unternehmen</p>
+              </div>
             </div>
           </div>
         </Box>
