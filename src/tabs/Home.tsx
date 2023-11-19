@@ -86,9 +86,12 @@ function Home() {
 
   const skillsOther: Skill[] = [{ img: SkillOpenCV, alt: "OpenCV", level: 30 }];
 
-  const skillsSections = {
+  const firstskillsSections = {
     Sprachen: skillsLanguage,
     IDEs: skillsIDE,
+  };
+
+  const secondskillsSections = {
     Datenbank: skillsDB,
     Frameworks: skillsJSFramework,
     Stylesheets: skillsStyle,
@@ -112,11 +115,11 @@ function Home() {
           const b = Math.min(124 + widthPercentage, 255);
 
           const gradientStyle = {
-            backgroundImage: `linear-gradient(to right, var(--mint-100), rgba(${r}, ${g}, ${b}, 0.8))`,
+            backgroundImage: `linear-gradient(to right, var(--mint-300), rgba(${r}, ${g}, ${b}, 0.6))`,
           };
 
           return (
-            <div className="skill-row" key={skill.img}>
+            <div className="skill-rowskill-row" key={skill.img}>
               <div className="mainline">
                 <div
                   className="skill-line"
@@ -322,9 +325,18 @@ function Home() {
             <div className="block" id="myskills">
               <h2>Meine Skills</h2>
               <div id="skills">
-                {Object.entries(skillsSections).map(([category, skillList]) =>
-                  renderSkillCategorySection(category, skillList)
-                )}
+                <div className="skills-box" id="first-skills-box">
+                  {Object.entries(firstskillsSections).map(
+                    ([category, skillList]) =>
+                      renderSkillCategorySection(category, skillList)
+                  )}
+                </div>
+                <div className="skills-box">
+                  {Object.entries(secondskillsSections).map(
+                    ([category, skillList]) =>
+                      renderSkillCategorySection(category, skillList)
+                  )}
+                </div>
               </div>
               <p className="description">Kürzlich verwendete Technologien</p>
               <div id="mycurrentskills-skills">

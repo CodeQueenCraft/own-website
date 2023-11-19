@@ -2,9 +2,11 @@
     --white: white;
     --gray-100: #f1f1f1;
     --gray-200: #555 ;
+    --gray-500: rgb(45, 45, 55);
     --mint-50: rgb(185, 219, 234);
     --mint-100: rgba(64, 105, 124, 1);
     --mint-200: rgb(48, 78, 93);
+    --mint-300: rgba(39, 61, 73, 0.3);
     }
 
 #home-entryheader{
@@ -116,7 +118,7 @@
 }
 
 #shorts .numbers #infinite{
-    font-weight: 400;
+    font-weight: 600;
 }
 
 #shorts .numbers-txt{
@@ -157,7 +159,7 @@
 }
 
 #home-content{
-    background-color: rgb(45, 45, 55);
+    background-color: var(--gray-500);
     padding-top: 3rem;
     padding-left: 5rem;
     padding-right: 5rem;
@@ -182,7 +184,7 @@
 
 #home-content .block{
     display: block;
-    width: 30rem;
+    width: 100%;
 }
 
 #aboutme{
@@ -236,7 +238,7 @@
 }
 
 .content-row #myskills{
-    float: right;
+    float: left;
     padding: 1rem;
 }
 
@@ -246,29 +248,42 @@
 }
 
 .content-row #myskills #skills{
-    display: block;
+    display: flex;
     margin-bottom: 2rem;
 }
 
-.content-row #myskills #skills .category-title{
+.skills-box{
+    width: 45%;
+    margin-left: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--mint-300);
+    border: 3px solid var(--mint-300);
+}
+
+#first-skills-box{
+    margin: 0;
+}
+
+#myskills .skills-box .category-title{
     margin-bottom: 0;
 }
 
-.content-row #myskills #skills .skill-row{
+#myskills .skills-box .skill-row{
     width: 100%;
+    margin-bottom: 0.2rem;
 }
 
-.content-row #myskills #skills .skill-row .mainline{
+#myskills .skills-box .mainline{
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
     width: 100%;
 }
 
-.content-row #myskills #skills .skill-row .mainline .skill-line{
+#myskills .skills-box .mainline .skill-line{
     display: flex;
     align-items: center;
-    margin-top: 1rem;
     width: 60%;
     height: 1rem;
     /*background: linear-gradient(to right, var(--mint-100), var(--mint-50));*/
@@ -278,7 +293,7 @@
     border-bottom-right-radius: 15px; 
 }
 
-.content-row #myskills #skills .skill-row .mainline .skill-line p{
+#myskills .skills-box .mainline .skill-line p{
     line-height: 1rem;
     margin-top: 0;
     margin-bottom: 0;
@@ -286,7 +301,7 @@
     font-size: 0.8rem;
 }
 
-.content-row #myskills #skills .skill-row .mainline img{
+#myskills .skills-box .mainline img{
     width: 1.8rem;
     height: 1.8rem;
 }
