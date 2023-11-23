@@ -107,27 +107,26 @@ function Home() {
     return (
       <div key={category} className="skill-category">
         <p className="category-title">{category}:</p>
+
         {skills.map((skill) => {
-          const widthPercentage = skill.level * 2;
-
-          const r = Math.min(64 + widthPercentage, 255); //Farbwerte von var(--mint-100)
-          const g = Math.min(105 + widthPercentage, 255);
-          const b = Math.min(124 + widthPercentage, 255);
-
-          const gradientStyle = {
-            backgroundImage: `linear-gradient(to right, var(--mint-300), rgba(${r}, ${g}, ${b}, 0.6))`,
-          };
+          const widthPercentage = 100 - skill.level;
 
           return (
             <div className="skill-rowskill-row" key={skill.img}>
               <div className="mainline">
-                <div
-                  className="skill-line"
-                  style={{ width: `${skill.level}%`, ...gradientStyle }}
-                >
+                <div className="skill-line">
                   <p>{skill.alt}</p>
                 </div>
-                <img src={skill.img} alt={skill.alt} title={skill.alt} />
+                <div
+                  className="overlay-right"
+                  style={{
+                    width: `calc(${100 - skill.level}% + 3rem)`,
+                  }}
+                >
+                  <div className="arrow"></div>
+                  <img src={skill.img} alt={skill.alt} title={skill.alt} />
+                  <div className="block"></div>
+                </div>
               </div>
             </div>
           );
@@ -261,7 +260,7 @@ function Home() {
             <img src={Shorts1} alt="Erfahrung" title="Erfahrung" />
             <div className="shortsbox-description">
               <div className="numbers">
-                <p>{">"}1,5 J.</p>
+                <p>{">"}7,5 J.</p>
               </div>
               <div className="numbers-txt">
                 <p>Erfahrung</p>
@@ -285,7 +284,7 @@ function Home() {
             <img src={Shorts3} alt="Die Richtige" title="Die Richtige" />
             <div className="shortsbox-description">
               <div className="numbers">
-                <p id="infinite">ꝏ</p>
+                <p>ꝏ</p>
               </div>
               <div className="numbers-txt">
                 <p>Geniale</p>
