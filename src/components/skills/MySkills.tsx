@@ -1,5 +1,7 @@
 import "./MySkills.css";
 
+import React, { useState, ReactNode } from "react";
+
 import {
   SkillAngular,
   SkillCplusplus,
@@ -77,39 +79,62 @@ function MySkills() {
     Andere: skillsOther,
   };
 
+  const [selectedButton, setSelectedButton] = useState<string | null>(null);
+
+  const handleButtonClick = (button: string | null) => {
+    setSelectedButton(button);
+  };
+
   const renderSkillCategorySection = (category: string, skills: Skill[]) => {
-    const getMaxWidth = () => {
-      // Hier kannst du die maximale Breite für den Farbverlauf festlegen
-      return 100; // Beispiel: 100%
+    const contentForChartLines = (): ReactNode => {
+      return (
+        <div>
+          {skills.map((skill) => {
+            const r = Math.min(39 + skill.level, 255); //Farbwerte von var(--mint-300)
+            const g = Math.min(61 + skill.level, 255);
+            const b = Math.min(73 + skill.level, 255);
+
+            const gradientStyle = {
+              backgroundImage: `linear-gradient(to right, var(--mint-300), rgba(${r}, ${g}, ${b}, 1))`,
+            };
+
+            return (
+              <div className="skill-rowskill-row" key={skill.img}>
+                <div className="mainline">
+                  <div
+                    className="skill-line"
+                    style={{ width: `${skill.level}%`, ...gradientStyle }}
+                  >
+                    <p>{skill.alt}</p>
+                  </div>
+                  <img src={skill.img} alt={skill.alt} title={skill.alt} />
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      );
+    };
+
+    const contentForChartCircles = (): ReactNode => {
+      return <div></div>;
+    };
+
+    const renderContent = (): ReactNode => {
+      if (selectedButton === "button-lines") {
+        return contentForChartLines();
+      } else if (selectedButton === "button-circles") {
+        return contentForChartCircles();
+      } else {
+        return null;
+      }
     };
 
     return (
       <div key={category} className="skill-category">
         <p className="category-title">{category}:</p>
 
-        {skills.map((skill) => {
-          const r = Math.min(39 + skill.level, 255); //Farbwerte von var(--mint-300)
-          const g = Math.min(61 + skill.level, 255);
-          const b = Math.min(73 + skill.level, 255);
-
-          const gradientStyle = {
-            backgroundImage: `linear-gradient(to right, var(--mint-300), rgba(${r}, ${g}, ${b}, 1))`,
-          };
-
-          return (
-            <div className="skill-rowskill-row" key={skill.img}>
-              <div className="mainline">
-                <div
-                  className="skill-line"
-                  style={{ width: `${skill.level}%`, ...gradientStyle }}
-                >
-                  <p>{skill.alt}</p>
-                </div>
-                <img src={skill.img} alt={skill.alt} title={skill.alt} />
-              </div>
-            </div>
-          );
-        })}
+        {renderContent()}
       </div>
     );
   };
@@ -119,10 +144,10 @@ function MySkills() {
       <div id="myskills-header">
         <h2>Meine Skills</h2>
         <div className="button-wrapper">
-          <button id="button-lines">
+          <button onClick={() => handleButtonClick("button-lines")}>
             <img src={ChartLine} alt={"Linien"} title={"Linien"} />
           </button>
-          <button id="button-circles">
+          <button onClick={() => handleButtonClick("button-circles")}>
             <img src={ChartCircle} alt={"Kreis"} title={"Kreis"} />
           </button>
         </div>
