@@ -116,7 +116,17 @@ function MySkills() {
 
   return (
     <div className="block" id="myskills">
-      <h2>Meine Skills</h2>
+      <div id="myskills-header">
+        <h2>Meine Skills</h2>
+        <div className="button-wrapper">
+          <button id="button-lines">
+            <img src={ChartLine} alt={"Linien"} title={"Linien"} />
+          </button>
+          <button id="button-circles">
+            <img src={ChartCircle} alt={"Kreis"} title={"Kreis"} />
+          </button>
+        </div>
+      </div>
       <div id="skills">
         <div className="skills-box" id="first-skills-box">
           {Object.entries(firstskillsSections).map(([category, skillList]) =>
