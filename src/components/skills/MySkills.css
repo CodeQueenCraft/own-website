@@ -1,0 +1,97 @@
+#myskills #mycurrentskills-skills{
+    display: inline-block;
+    width: 100%;
+}
+
+#myskills .mycurrentskills-wrapper{
+    display: inline-flex;
+    background-color: rgb(204, 204, 210);
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+#myskills .mycurrentskills-wrapper img{
+    width: 2rem;
+    height: 2rem;
+}
+
+#myskills{
+    float: left;
+    padding: 1rem;
+}
+
+#myskills:hover{
+    border-radius: 10px;
+    background-color: rgba(54, 90, 106, 0.2);
+}
+
+#myskills #skills{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.skills-box{
+    width: 45%;
+    margin-left: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--mint-300);
+    border: 3px solid var(--mint-300);
+}
+
+#first-skills-box{
+    margin: 0;
+}
+
+#myskills .skills-box .skill-category{
+    display: flex;
+    flex-direction: column;
+}
+
+#myskills .skills-box .category-title{
+    margin-bottom: 0;
+    color: rgba(185, 219, 234, 0.7);
+}
+
+#myskills .skills-box .skill-row{
+    width: 100%;
+    margin-bottom: 0.2rem;
+}
+
+#myskills .skills-box .mainline{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;   
+    height: 2rem;
+}
+
+#myskills .skills-box .mainline .skill-line{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 1rem;
+    border-top-left-radius: 0; 
+    border-top-right-radius: 15px; 
+    border-bottom-left-radius: 0; 
+    border-bottom-right-radius: 15px; 
+}
+
+#myskills .skills-box .mainline .skill-line p{
+    line-height: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    font-size: 0.7rem;
+    float: right;
+}
+
+#myskills .skills-box .mainline img{
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: var(--mint-300);  
+}
