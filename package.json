@@ -11,6 +11,7 @@
     "@types/node": "^16.18.59",
     "@types/react": "^18.2.31",
     "@types/react-dom": "^18.2.14",
+    "d3": "^7.8.5",
     "jquery": "^3.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -48,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "@types/d3": "^7.4.3",
     "@types/jquery": "^3.5.25",
     "@types/slick-carousel": "^1.6.39",
     "css-loader": "^6.8.1",
@@ -55,7 +57,7 @@
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
     "ts-loader": "^9.5.0",
-    "typescript": "^5.2.2",
+    "typescript": "^4.9.5",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"
   }
